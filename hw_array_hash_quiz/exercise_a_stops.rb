@@ -35,8 +35,14 @@ p stops
 p stops.length
 
 # 8. How many ways can we return `"Falkirk High"` from the array?
-
-p stops[4]
+puts
+p stops[2]
+puts
+for stop in stops
+  if stop == "Falkirk High"
+    p stop
+  end
+end
 
 
 # 9. Reverse the positions of the stops in the array
