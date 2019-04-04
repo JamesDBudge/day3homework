@@ -76,15 +76,22 @@ array = users["Erik"][:lottery_numbers]
 array.sort!
 p array[0]
 puts
+#array.sort.first
+#array = users["Erik"][:lottery_numbers].sort(0)
+#array = users["Erik"][:lottery_numbers].min
+
 # 6. Return an array of Avril's lottery numbers that are even
 
 numbers = users["Avril"][:lottery_numbers]
+array = []
 
 for num in numbers
   if num % 2 == 0
-    p num
+    array.push(num)
   end
 end
+
+p array
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 

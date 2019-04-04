@@ -33,10 +33,14 @@ p stops
 # 7. How many stops there are in the array?
 
 p stops.length
+stops.size
+stops.count
+
 
 # 8. How many ways can we return `"Falkirk High"` from the array?
 puts
 p stops[2]
+p stops[-5]
 puts
 for stop in stops
   if stop == "Falkirk High"
@@ -48,6 +52,7 @@ end
 # 9. Reverse the positions of the stops in the array
 
 p stops.reverse
+#stops.reverse! #modifies the original array with the reversed contents
 
 # 10. Print out all the stops using a for loop
 
